@@ -18,9 +18,9 @@ class TrashHintsLoaderImpl: TrashHintsLoader{
         let urlString = "https://segregujna5.um.warszawa.pl/wp-admin/admin-ajax.php?action=search_waste&phrase="+text // musimy usuwac ł i inne znaki
         let safeURL = urlString.urlPercentEncoded(withAllowedCharacters: .urlQueryAllowed, encoding: .utf8)
         let url = URL(string:safeURL)!
-        var request = URLRequest(url:url)
+        let request = URLRequest(url:url)
         
-        urlSession.dataTask(with: request){[weak self] (data ,_, error) in
+        urlSession.dataTask(with: request){(data ,_, error) in
             var elements: [TrashHint]?
             defer{
                 DispatchQueue.main.async{

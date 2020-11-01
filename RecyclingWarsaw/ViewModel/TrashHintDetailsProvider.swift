@@ -16,7 +16,7 @@ class TrashHintDetailsProviderImpl: TrashHintDetailsProvider{
     func processHTML(html:String,trashDetailsFromPlist:[TrashDetails]) -> TrashHintDetails?{
         let trashHintDetail = TrashHintDetails()
         //print(html)
-        print("------------------------")
+//        print("------------------------")
         let start = html.range(of: "waste-answer\">")?.lowerBound
         let stop = html.range(of: "<div class=\"inner-search")?.upperBound
         guard start != nil, stop != nil else {return nil}
@@ -53,7 +53,7 @@ class TrashHintDetailsProviderImpl: TrashHintDetailsProvider{
             let addText = neededHTML[startAdd!..<stopAdd!]
             //print("Add Text: \(addText)")
             let addTextMore = addText[addText.index(addText.startIndex,offsetBy: 27) ..< addText.index(addText.endIndex,offsetBy: -4)]
-            print("Next Add Text: \(addTextMore)")
+//            print("Next Add Text: \(addTextMore)")
             trashHintDetail.additionalInfo = String(addTextMore)
         }else{
             trashHintDetail.additionalInfo = ""
@@ -68,43 +68,43 @@ class TrashHintDetailsProviderImpl: TrashHintDetailsProvider{
         //print("Bin Text: \(binText)")
         
         if binText.lowercased().contains("bioodpady"){
-            print("KOSZ: bio")
+//            print("KOSZ: bio")
             trashHintDetail.trashDetail = trashDetailsFromPlist[1]
         }else if binText.lowercased().contains("zmieszane"){
-            print("KOSZ: zmieszane")
+//            print("KOSZ: zmieszane")
             trashHintDetail.trashDetail = trashDetailsFromPlist[6]
         }else if binText.lowercased().contains("papier"){
-            print("KOSZ: papier")
+//            print("KOSZ: papier")
             trashHintDetail.trashDetail = trashDetailsFromPlist[4]
         }else if binText.lowercased().contains("szkło"){
-            print("KOSZ: szkło")
+//            print("KOSZ: szkło")
             trashHintDetail.trashDetail = trashDetailsFromPlist[2]
         }else if binText.lowercased().contains("gabaryty"){
-            print("KOSZ: gabaryty")
+//            print("KOSZ: gabaryty")
             trashHintDetail.trashDetail = trashDetailsFromPlist[5]
         }else if binText.lowercased().contains("zielone"){
-            print("KOSZ: zielone")
+//            print("KOSZ: zielone")
             trashHintDetail.trashDetail = trashDetailsFromPlist[3]
         }else if binText.lowercased().contains("metale"){
-            print("KOSZ: metale")
+//            print("KOSZ: metale")
             trashHintDetail.trashDetail = trashDetailsFromPlist[0]
         }else if binText.lowercased().contains("baterie"){
-            print("KOSZ: baterie")
+//            print("KOSZ: baterie")
             trashHintDetail.trashDetail = trashDetailsFromPlist[7]
         }else if binText.lowercased().contains("elektrośmieci"){
-            print("KOSZ: elektrosmieci")
+//            print("KOSZ: elektrosmieci")
             trashHintDetail.trashDetail = trashDetailsFromPlist[8]
         }else if binText.lowercased().contains("leki"){
-            print("KOSZ: leki")
+//            print("KOSZ: leki")
             trashHintDetail.trashDetail = trashDetailsFromPlist[9]
         }else{
-            print("KOSZ: pozostałe")
+//            print("KOSZ: pozostałe")
             trashHintDetail.trashDetail = trashDetailsFromPlist[10]
         }
         
-        print("Informacje główne: \(String(describing: trashHintDetail.mainInfo))")
-        print("Informacje dodatkowe: \(String(describing: trashHintDetail.trashDetail))")
-        print("Kosz: \(String(describing: trashHintDetail.trashDetail?.name))")
+//        print("Informacje główne: \(String(describing: trashHintDetail.mainInfo))")
+//        print("Informacje dodatkowe: \(String(describing: trashHintDetail.trashDetail))")
+//        print("Kosz: \(String(describing: trashHintDetail.trashDetail?.name))")
         
         return trashHintDetail
     }

@@ -19,7 +19,7 @@ class AdsProvider{
     }
     static func reloadAdd(baner:GADBannerView){
         baner.load(GADRequest())
-        print("RELOAD")
+//        print("RELOAD")
     }
 }
 

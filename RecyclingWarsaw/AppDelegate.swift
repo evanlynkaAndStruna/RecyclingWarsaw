@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Initialize the Google Mobile Ads SDK.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-        GADMobileAds.disableAutomatedInAppPurchaseReporting()
-        GADMobileAds.disableSDKCrashReporting()
         
         if #available(iOS 13.0, *){}else{
             window = UIWindow(frame: UIScreen.main.bounds)

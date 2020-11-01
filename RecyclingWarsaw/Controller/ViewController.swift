@@ -257,9 +257,9 @@ extension ViewController: UISearchBarDelegate{
                     return
                 }
                 if elements != nil {
-                    for el in elements!{
-                        print(el.label)
-                    }
+//                    for el in elements!{
+//                        print(el.label)
+//                    }
                     self?.trashHints = elements
                     self?.viewWithTableView?.tableView?.reloadData()
                     self?.viewWithTableView?.isHidden = false
@@ -283,7 +283,7 @@ extension ViewController: UISearchBarDelegate{
                         self?.viewWithTableView?.tableView?.isScrollEnabled = false
                     }
                 }else{
-                    print("No internet connection")
+//                    print("No internet connection")
                     if searchText.count == 3{
                         self?.searchBarTopView?.searchBar!.resignFirstResponder()//musi tu byc bo inaczej wróci klawiatura i mrugnie blur przez to
                         self?.showAlert(title:"Ups",message:"Brak połączenia z internetem",okAction:{
@@ -362,14 +362,14 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate{
         trashHintDetailsProviderImpl?.getTrashHintDetails(urlString: urlString, trashDetailsFromPlist: trashDetailsFromPlist!, completion: { [weak self] (trashHintDetails, error) in
             guard trashHintDetails != nil else {
                 self?.loaderView?.hide(duration: 1.5)
-                print("No Internet connection")
+//                print("No Internet connection")
                 self?.showAlert(title:"Ups",message:"Brak połączenia z internetem",okAction:{ [weak self] in
                     self?.blurEffectView?.hide(duration: 1, completion: {})
                 })
                 return
             }
             trashHintDetails!.trashHintName = self?.trashHints![indexPath.row].label
-            print("Nazwa śmiecia: \(self?.trashHints![indexPath.row].label)")
+//            print("Nazwa śmiecia: \(self?.trashHints![indexPath.row].label)")
             self?.goToTrashDetailsVC(trashHintDetails:trashHintDetails!)
             self?.loaderView?.hide(duration: 1.5)
         })
@@ -392,7 +392,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate{
 
 extension ViewController: TrashTypeDetailsViewControllerDelegate{
     func viewDidDisappear() {
-        print("RELOAD")
+//        print("RELOAD")
         AdsProvider.reloadAdd(baner: bannerView)
         searchBarTopView?.searchBar?.isUserInteractionEnabled = false
         tilesView?.isUserInteractionEnabled = false
@@ -426,8 +426,8 @@ extension ViewController: TilesViewDataSource, TilesViewDelegate{
     
     func didSelectElement(in tilesView: TilesView, at indexPath: IndexPath) {
         let detailsVC = TrashTypeDetailsViewController()
-        print(indexPath.row)
-        print(indexPath.section)
+//        print(indexPath.row)
+//        print(indexPath.section)
         detailsVC.trashFromVC = trashDetailsFromPlistMenu![indexPath.row][indexPath.section]
         detailsVC.trashTypeDetailsViewControllerDelegate = self
         if #available(iOS 13.0, *){

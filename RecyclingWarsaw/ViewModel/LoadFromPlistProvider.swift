@@ -25,7 +25,7 @@ class LoadFromPlistProviderImpl: LoadFromPlistProvider{
                 let trashDetails = try decoder.decode([TrashDetails].self, from: data)
                 return trashDetails
             }catch{
-                print("Error decoding item array: \(error)")
+//                print("Error decoding item array: \(error)")
             }
         }
         return nil
