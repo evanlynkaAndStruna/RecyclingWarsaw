@@ -29,8 +29,8 @@ class ViewController: UIViewController{
     var trashDetailsFromPlistMenu: [[TrashDetails]]?
     var loaderView: LoaderView?
     var canSendEmail = true
-    let bannerViewMainAdID = "ca-app-pub-3940256099942544/6300978111" //Testowe ID
-    //let bannerViewMainAdID = "ca-app-pub-3774653118074483/8906112332"//Dobre ID
+//    let bannerViewMainAdID = "ca-app-pub-3940256099942544/6300978111" //Testowe ID
+    let bannerViewMainAdID = "ca-app-pub-3774653118074483/8906112332"//Dobre ID
     var didSetConstraintsVC = false
     
     override func viewDidLoad() {
@@ -340,8 +340,8 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate{
                 if MFMailComposeViewController.canSendMail() {
                     let mail = MFMailComposeViewController()
                     mail.mailComposeDelegate = self
-//                    mail.setToRecipients(["segregujna5@um.warszawa.pl"])
-                    mail.setToRecipients(["dodocode20@gmail.com"])
+                    mail.setToRecipients(["segregujna5@um.warszawa.pl"])
+//                    mail.setToRecipients(["dodocode20@gmail.com"])
                     mail.setSubject("Uzupełnienie braków bazy danych odpadów")
                     mail.setMessageBody(message, isHTML: false)
                     self.present(mail, animated: true)

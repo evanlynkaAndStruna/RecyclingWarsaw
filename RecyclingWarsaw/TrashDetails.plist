@@ -76,7 +76,8 @@
 		<key>name</key>
 		<string>Odpady wielkogabarytowe</string>
 		<key>description</key>
-		<string>Stare meble (także rozłożone na części) oraz wyroby tapicerskie (np. fotele, wersalki, pufy), materace, zabawki dużych rozmiarów.Pamiętaj: zapytaj swojego administratora, gdzie znajdziesz miejsce przeznaczone do składowania odpadów wielkogabarytowych</string>
+		<string>Stare meble (także rozłożone na części) oraz wyroby tapicerskie (np. fotele, wersalki, pufy), materace, zabawki dużych rozmiarów.
+❕Pamiętaj: zapytaj swojego administratora, gdzie znajdziesz miejsce przeznaczone do składowania odpadów wielkogabarytowych</string>
 		<key>imageName</key>
 		<string>WielkogabarytoweNoWords</string>
 		<key>color</key>
@@ -104,7 +105,7 @@
 		<key>name</key>
 		<string>Baterie i akumulatory</string>
 		<key>description</key>
-		<string>-</string>
+		<string>❕ Zużyte baterie i akumulatory zanieść do punktu zbiórki baterii i akumulatorów. </string>
 		<key>imageName</key>
 		<string>BaterieNoWords</string>
 		<key>color</key>
@@ -118,7 +119,7 @@
 		<key>name</key>
 		<string>Elektrośmieci</string>
 		<key>description</key>
-		<string>-</string>
+		<string>❕ Zużyty sprzęt elektryczny oraz elektroniczny zanieść do punktu zbiórki zużytego sprzętu elektrycznego i elektronicznego. </string>
 		<key>imageName</key>
 		<string>ElektrosmieciNoWords</string>
 		<key>color</key>
@@ -132,7 +133,7 @@
 		<key>name</key>
 		<string>Leki</string>
 		<key>description</key>
-		<string>-</string>
+		<string>❕ Przeterminowane leki wraz z opakowaniami oraz termometry rtęciowe oddajemy do wyznaczonych aptek.</string>
 		<key>imageName</key>
 		<string>LekiNoWords</string>
 		<key>color</key>
@@ -146,7 +147,7 @@
 		<key>name</key>
 		<string>Pozostałe odpady</string>
 		<key>description</key>
-		<string>-</string>
+		<string>❕ Pozostałe odpady możesz oddać do Punktu Selektywnej Zbiórki Odpadów Komunalnych.</string>
 		<key>imageName</key>
 		<string>PozostałeNoWords</string>
 		<key>color</key>
@@ -160,7 +161,8 @@
 		<key>name</key>
 		<string>Inne</string>
 		<key>description</key>
-		<string>Zużyty sprzęt elektryczny oraz elektroniczny zanieść do punktu zbiórki zużytego sprzędu elektrycznego i elektronicznego. Zużyte baterie i akumulatory zanieść do punktu zbiórki baterii i akumulatorów. Przeterminowane leki wraz z opakowaniami oraz termometry rtęciowe oddajemy do wyznaczonych aptek.</string>
+		<string>● Zużyty sprzęt elektryczny oraz elektroniczny zanieść do punktu zbiórki zużytego sprzętu elektrycznego i elektronicznego. 
+● Zużyte baterie i akumulatory zanieść do punktu zbiórki baterii i akumulatorów. ● Przeterminowane leki wraz z opakowaniami oraz termometry rtęciowe oddajemy do wyznaczonych aptek.</string>
 		<key>imageName</key>
 		<string>InneNoWords</string>
 		<key>color</key>

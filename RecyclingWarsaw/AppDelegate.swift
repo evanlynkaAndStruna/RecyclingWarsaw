@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Initialize the Google Mobile Ads SDK.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
+        //GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["a698dc29239d488156c98d7333f40edb"]
         
         if #available(iOS 13.0, *){}else{
             window = UIWindow(frame: UIScreen.main.bounds)
