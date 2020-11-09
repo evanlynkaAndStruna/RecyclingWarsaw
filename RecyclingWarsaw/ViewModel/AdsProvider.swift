@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import Firebase
+import GoogleMobileAds
 
 
 class AdsProvider{
-    static func initiateBannerAds(baner:GADBannerView,VC: UIViewController,id: String){
+    static func initiateBannerAds(baner:GADBannerView, VC: UIViewController, id: String){
         baner.adUnitID = id
         baner.rootViewController = VC
         baner.adSize = kGADAdSizeSmartBannerPortrait

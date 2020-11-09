@@ -9,8 +9,7 @@ target 'RecyclingWarsaw' do
   use_frameworks!
 
   # Pods for RecyclingWarsaw
-    pod 'SnapKit', '~> 5.0.0'
-    pod 'Firebase/Analytics'
-    pod 'Firebase/AdMob'
+    pod 'SnapKit'
+    pod 'Google-Mobile-Ads-SDK'
     pod 'lottie-ios'
 end

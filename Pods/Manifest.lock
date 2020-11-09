@@ -1,38 +1,5 @@
 PODS:
-  - Firebase/AdMob (7.0.0):
-    - Firebase/CoreOnly
-    - Google-Mobile-Ads-SDK (~> 7.66)
-  - Firebase/Analytics (7.0.0):
-    - Firebase/Core
-  - Firebase/Core (7.0.0):
-    - Firebase/CoreOnly
-    - FirebaseAnalytics (= 7.0.0)
-  - Firebase/CoreOnly (7.0.0):
-    - FirebaseCore (= 7.0.0)
-  - FirebaseAnalytics (7.0.0):
-    - FirebaseCore (~> 7.0)
-    - FirebaseInstallations (~> 7.0)
-    - GoogleAppMeasurement (= 7.0.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
-    - GoogleUtilities/MethodSwizzler (~> 7.0)
-    - GoogleUtilities/Network (~> 7.0)
-    - "GoogleUtilities/NSData+zlib (~> 7.0)"
-    - nanopb (~> 2.30906.0)
-  - FirebaseCore (7.0.0):
-    - FirebaseCoreDiagnostics (~> 7.0)
-    - GoogleUtilities/Environment (~> 7.0)
-    - GoogleUtilities/Logger (~> 7.0)
-  - FirebaseCoreDiagnostics (7.0.0):
-    - GoogleDataTransport (~> 8.0)
-    - GoogleUtilities/Environment (~> 7.0)
-    - GoogleUtilities/Logger (~> 7.0)
-    - nanopb (~> 2.30906.0)
-  - FirebaseInstallations (7.0.0):
-    - FirebaseCore (~> 7.0)
-    - GoogleUtilities/Environment (~> 7.0)
-    - GoogleUtilities/UserDefaults (~> 7.0)
-    - PromisesObjC (~> 1.2)
-  - Google-Mobile-Ads-SDK (7.67.1):
+  - Google-Mobile-Ads-SDK (7.68.0):
     - GoogleAppMeasurement (~> 7.0)
     - GoogleUserMessagingPlatform (~> 1.1)
   - GoogleAppMeasurement (7.0.0):
@@ -40,8 +7,6 @@ PODS:
     - GoogleUtilities/MethodSwizzler (~> 7.0)
     - GoogleUtilities/Network (~> 7.0)
     - "GoogleUtilities/NSData+zlib (~> 7.0)"
-    - nanopb (~> 2.30906.0)
-  - GoogleDataTransport (8.0.0):
     - nanopb (~> 2.30906.0)
   - GoogleUserMessagingPlatform (1.3.0)
   - GoogleUtilities/AppDelegateSwizzler (7.0.0):
@@ -61,9 +26,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.0.0)"
   - GoogleUtilities/Reachability (7.0.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (7.0.0):
-    - GoogleUtilities/Logger
-  - lottie-ios (3.1.8)
+  - lottie-ios (3.1.9)
   - nanopb (2.30906.0):
     - nanopb/decode (= 2.30906.0)
     - nanopb/encode (= 2.30906.0)
@@ -73,21 +36,14 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Firebase/AdMob
-  - Firebase/Analytics
+  - Google-Mobile-Ads-SDK
   - lottie-ios
-  - SnapKit (~> 5.0.0)
+  - SnapKit
 
 SPEC REPOS:
   trunk:
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseCore
-    - FirebaseCoreDiagnostics
-    - FirebaseInstallations
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
-    - GoogleDataTransport
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - lottie-ios
@@ -96,21 +52,15 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  Firebase: 50be68416f50eb4eb2ecb0e78acab9a051ef95df
-  FirebaseAnalytics: c1166b7990bae464c6436132510bb718c6680f80
-  FirebaseCore: cf3122185fce1cf71cedbbc498ea84d2b3e7cb69
-  FirebaseCoreDiagnostics: 5f4aa04fdb04923693cc704c7ef9158bdf41a48b
-  FirebaseInstallations: c28d4bcbb5c6884d1a39afbc0bd7fc590e31e9b7
-  Google-Mobile-Ads-SDK: 4c11bba9a823ed16c42f14d42feebc7678fbfd6a
+  Google-Mobile-Ads-SDK: 29bbdb182d69ff606cc0301da1590b40be8d2205
   GoogleAppMeasurement: 7790ef975d1d463c8614cd949a847e612edf087a
-  GoogleDataTransport: 6ce8004a961db1b905740d7be106c61ba7e89c21
   GoogleUserMessagingPlatform: 1d4b6946710d18cec34742054092e2c2bddae61f
   GoogleUtilities: ffb2f4159f2c897c6e8992bd7fbcdef8a300589c
-  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: d27aa14e19473130252a9f0dbc9f2f0d0f02e954
+PODFILE CHECKSUM: cf88bf85d374500fa52abcc2642b7c56f6667635
 
 COCOAPODS: 1.10.0
